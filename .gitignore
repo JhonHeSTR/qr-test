@@ -1,0 +1,12 @@
+
+# Node
+/node_modules
+
+# dotenv
+.env
+
+#dist
+dist/*
+
+/uploads/*
+!/uploads/.gitkeep
