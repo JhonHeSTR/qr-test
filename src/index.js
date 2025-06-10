@@ -31,7 +31,7 @@ class Server {
     }
 
     folder() {
-        this.app.use('uploads', express.static(path.resolve('uploads')));
+        this.app.use('/uploads', express.static(path.resolve('uploads')));
     }
 }
 

@@ -11,8 +11,10 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "jsqr": "^1.4.0",
     "multer": "^2.0.1",
     "pdf-to-img": "^4.5.0",
+    "sharp": "^0.34.2",
     "uuid": "^11.1.0"
   }
 }
