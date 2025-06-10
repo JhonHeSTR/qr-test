@@ -1,9 +1,10 @@
-const {Router} = require('express');
+const { Router } = require('express');
 const multer = require('../libs/multer');
-const {insert} = require('../controllers/qr');
+const { qr } = require('../controllers/qr');
+const validateFileType = require('../middlewares/fileType');
 
 const router = Router();
 
-router.post('/', multer.single('file'), insert)
+router.post('/', multer.single('file'), validateFileType, qr)
 
 module.exports = router;
